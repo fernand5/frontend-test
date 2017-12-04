@@ -31,7 +31,7 @@ a:hover {
 .header {
   display: flex;
   align-items: center;
-  background-color: #ee6e73;
+  background-color: #ff6f5b;
 }
 .header-title {
   flex: 0;
@@ -50,8 +50,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #cf4646;
-  color: white;
+  color: #000;
 }
 .title-h1 {
   font-weight: 300;
@@ -127,8 +126,9 @@ a:hover {
 }
 .circle{
   vertical-align: middle;
-  height: 64px;
+  height: 60px;
   width: 64px;
+  color: #FFF;
 }
 .animate-show,
 .animate-hide {
@@ -162,4 +162,25 @@ a:hover {
 
 .progress .indeterminate {
   background-color: #be3838ba;
+}
+.collapsible-header i {
+  width: 4rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-right: 1rem;
+}
+.green-custom{
+  background-color: #c7f04b;
+}
+.blue-custom{
+  background-color: #2fc3cb;
+}
+.fullscreen{
+  z-index: -1;
+}
+.main{
+  background-color: #bebebe;
 }

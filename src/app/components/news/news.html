@@ -1,11 +1,13 @@
 <div class="techs-container">
-  <div class="">
-    <ul id="newsAccordion" class="collapsible popout" data-collapsible="accordion" watch>
+
+    <ul id="newsAccordion" class="collapsible popout collection" data-collapsible="accordion" watch>
 
       <li style="opacity: 0;" ng-repeat="single in $ctrl.techs">
-        <div class="collapsible-header" ng-click="$ctrl.newClicked(single)">
-          <img class="circle" ng-src="{{ single.image }}"/>
-          {{single.title}}
+        <div class="collapsible-header collection" ng-click="$ctrl.newClicked(single)">
+          <i ng-if="$index % 2 == 1" class="material-icons circle green-custom z-depth-4">insert_chart</i>
+          <i ng-if="$index % 2 == 0" class="material-icons circle blue-custom z-depth-4">star</i>
+          <span class="title">{{single.title}}</span>
+
         </div>
         <div class="collapsible-body">
           <div class="col s12 m7">
@@ -25,7 +27,6 @@
           </div>
         </div>
       </li>
-
     </ul>
-  </div>
+
 </div>
