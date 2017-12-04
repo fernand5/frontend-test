@@ -1,0 +1,1 @@
+var DEV_API_URL_BASE = 'http://localhost:3000/app/services/news_mock.json';

@@ -1,7 +1,9 @@
-<div class="main-container">
+<div class="main-container" ng-init="$ctrl.load()">
+  <div class="progress" ng-show="!$ctrl.preloader">
+    <div class="indeterminate"></div>
+  </div>
   <fountain-header></fountain-header>
   <main class="main">
-    <fountain-title></fountain-title>
     <fountain-techs></fountain-techs>
   </main>
   <fountain-footer></fountain-footer>

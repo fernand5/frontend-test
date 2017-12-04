@@ -1,0 +1,31 @@
+<div class="techs-container">
+  <div class="">
+    <ul id="newsAccordion" class="collapsible popout" data-collapsible="accordion" watch>
+
+      <li style="opacity: 0;" ng-repeat="single in $ctrl.techs">
+        <div class="collapsible-header" ng-click="$ctrl.newClicked(single)">
+          <img class="circle" ng-src="{{ single.image }}"/>
+          {{single.title}}
+        </div>
+        <div class="collapsible-body">
+          <div class="col s12 m7">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img ng-src="{{ single.image }}">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>{{single.content}}</p>
+                </div>
+                <div class="card-action">
+                  <!--<a href="#">This is a link</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>

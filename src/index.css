@@ -31,10 +31,10 @@ a:hover {
 .header {
   display: flex;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: #ee6e73;
 }
 .header-title {
-  flex: 1;
+  flex: 0;
   font-size: 1.5rem;
   margin: 1rem;
 }
@@ -109,4 +109,57 @@ a:hover {
 .tech-h3 {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
+}
+.btn{
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn:hover{
+  background-color: transparent;
+  box-shadow: none;
+  color: black;
+}
+.btn:focus{
+  background-color: transparent;
+}
+.collapsible-header {
+  padding: 1rem 1rem;
+}
+.circle{
+  vertical-align: middle;
+  height: 64px;
+  width: 64px;
+}
+.animate-show,
+.animate-hide {
+  -webkit-transition:all linear 0.3s;
+  -moz-transition:all linear 0.3s;
+  -ms-transition:all linear 0.3s;
+  -o-transition:all linear 0.3s;
+  transition:all linear 0.3s;
+}
+
+.animate-show.ng-hide-remove,
+.animate-hide.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+  margin-left: -70px;
+  display: block !important;
+}
+
+.animate-hide.ng-hide-add,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+  margin: 0.5rem 0 0.4rem 0;
+  display: block !important;
+}
+.card{
+  margin: 0 0 0 0;
+}
+.progress {
+  margin: 0 0 0 0;
+  background-color: #ecacac;
+}
+
+.progress .indeterminate {
+  background-color: #be3838ba;
 }
