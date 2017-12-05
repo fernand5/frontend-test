@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('fountainTechs', {
-    templateUrl: 'app//components/news/news.html',
+    templateUrl: 'app/components/news/news.html',
     controller: NewsController
   });
 
