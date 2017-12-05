@@ -21,9 +21,5 @@ function HeaderController($scope, services, $timeout) {
 			vm.dataSelected = newValue;
 		}, 500);
 		vm.animate=false;
-		console.log("isLoggedIn changed to " + newValue);
 	});
-
-
-
-};
+}

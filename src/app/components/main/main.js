@@ -12,10 +12,10 @@ function MainController(services, $timeout) {
     vm.preloader = true;
 
     vm.load = function () {
-	    $timeout(function() {
-		    vm.preloader=true;
+    	$timeout(function () {
+		    vm.preloader = true;
 	    }, 1000);
-	    vm.preloader=false;
+	    vm.preloader = false;
     };
 
-};
+}

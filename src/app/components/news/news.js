@@ -6,15 +6,14 @@ angular
   });
 
 /** @ngInject */
-function NewsController($http, services,$scope) {
+function NewsController($http, services) {
 	var vm = this;
 	services.importData().then(function (response) {
-		vm.techs =response.data;
-		console.log(vm);
+		vm.techs = response.data;
 	});
 
 	vm.newClicked = function (data) {
+		$('.collapsible').collapsible();
 		services.setDataSelected(data.title);
-		console.log(services.dataSelected);
-	}
-};
+	};
+}

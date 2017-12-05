@@ -2,13 +2,13 @@ angular
 	.module('app')
 	.service('services', function ($http) {
 		var vm = this;
-		vm.dataSelected = "";
+		vm.dataSelected = '';
 
-		vm.importData = function(){
+		vm.importData = function () {
 			return $http
 				.get(DEV_API_URL_BASE)
 				.then(function (response) {
-					vm.data=response;
+					vm.data = response;
 					return response;
 				});
 		};
@@ -19,6 +19,5 @@ angular
 
 		vm.getData = function () {
 			return vm.dataSelected;
-		}
-
+		};
 	});
